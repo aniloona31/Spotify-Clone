@@ -1,0 +1,51 @@
+.body{
+    /* border: 1px solid red; */
+    height : 100vh;
+    /* width: 1200px; */
+    /* setting the width can be done easily like i want the body to take 80 percent and the sidebar to take 20 percent it can be done using flex */
+    flex : 0.8;
+    background : linear-gradient(rgb(91,87,115),rgba(0,0,0,1));
+    color: white;
+    padding: 30px;
+    overflow-y: overlay;
+}
+
+.body_info{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.body_info_text{
+    flex: 1;
+    padding: 5px;
+}
+
+.body_info > img{
+    height: 16vw;
+    width: 16vw;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 0 4px 60px rgba(0,0,0,0.5);
+}
+
+.body_info_text > p{
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.body_icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    max-width: 180px;
+    justify-content: space-between;
+}
+
+.body_shuffle:hover{
+    cursor: pointer;
+    transition: 100ms transform ease-in;
+    transform: scale(1.08);
+}
